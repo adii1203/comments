@@ -1,11 +1,12 @@
-
+import { data } from "./data";
+import Comment from "./components/Comment";
 
 function App() {
   return (
     <div className="App">
-      <h1 className="text-[red] text-5xl">
-        hello, world
-      </h1>
+      <div className="p-5">
+        <Comment data={data.comments}/>
+      </div>
     </div>
   );
 }
